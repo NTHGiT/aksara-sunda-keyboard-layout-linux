@@ -116,7 +116,7 @@ Download the releases deb packages
 and... Install
 
 ```shell
-sudo apt install kaganga-sundanese-layout.deb
+sudo apt install /path/to/kaganga-sundanese-layout.deb
 ```
 
 that's all.
