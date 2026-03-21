@@ -1,8 +1,5 @@
 # Sundanese Script(Kaganga) Layout for Linux
 
-Sundanese Script Layout for Linux Debian/Ubuntu Based Distros
----
-
 ### About
 
 This project is a personal project i've made because i need **Sundanese Script (Aksara Sunda)** natively without third party apps like keyman (yet the official kairaga made this) that the procedure is really not user friendly, so i wanna make a kinda custom layout for that with efficient way to do, since i used GNOME so there's a feature for custom layout natively, so far i haven't tested in other desktop environtment, but it's works fine on GNOME, i'll update more if i've do it or you're.
@@ -22,6 +19,7 @@ sudo apt install kaganga-sundanese-layout
 ```
 
 that's all.
+
 ---
 
 ### Post Installation
