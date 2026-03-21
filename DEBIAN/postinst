@@ -4,8 +4,10 @@ set -e
 SYMBOL_FILE="/usr/share/X11/xkb/symbols/id"
 EVDEV_XML="/usr/share/X11/xkb/rules/evdev.xml"
 
+# 1. Bersihkan entri lama
 sed -i '/\/\/ Layout start/,/\/\/end/d' "$SYMBOL_FILE"
 
+# 2. Tambahkan simbol Kaganga Sundanese
 cat <<EOF >> "$SYMBOL_FILE"
 
 // Layout start
@@ -65,25 +67,20 @@ xkb_symbols "kaganga-sundanese" {
 //end
 EOF
 
+# 3. Daftarkan varian ke evdev.xml
 if ! grep -q "kaganga-sundanese" "$EVDEV_XML"; then
     VAR_ENTRY="<variant><configItem><name>kaganga-sundanese</name><description>Kaganga Sundanese</description></configItem></variant>"
     sed -i "\|<name>javanese</name>|,\|</variant>| { \|</variant>| s|</variant>|</variant>\n        $VAR_ENTRY| }" "$EVDEV_XML"
 fi
-# Tambahan pada postinst untuk mengunduh font
-FONT_DIR="/usr/share/fonts/truetype/sundanese"
-mkdir -p "$FONT_DIR"
-if [ ! -f "$FONT_DIR/sundanese_unicode.ttf" ]; then
-    echo "Downloading Sundanese Unicode font from Kairaga..."
-    wget -O "$FONT_DIR/sundanese_unicode.ttf" "https://www.kairaga.com/wp-content/uploads/2013/02/sundanese_unicode_2.0.ttf" || true
-fi
 
+# 4. Bersihkan Cache
 fc-cache -fv > /dev/null
 rm -rf /var/lib/xkb/*.xkm
 
+# 5. Pasang ke GNOME Input Sources (User Active)
 if [ -n "$SUDO_USER" ]; then
     USER_ID=$(id -u "$SUDO_USER")
     export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$USER_ID/bus"
-
     if [ -S "/run/user/$USER_ID/bus" ]; then
         CURRENT_SOURCES=$(sudo -u "$SUDO_USER" gsettings get org.gnome.desktop.input-sources sources)
         if [[ "$CURRENT_SOURCES" != *"'id+kaganga-sundanese'"* ]]; then
