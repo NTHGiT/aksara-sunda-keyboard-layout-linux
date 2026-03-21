@@ -33,7 +33,12 @@ Things you need to know after the installation:
 Notice: Download is performed unsandboxed as root as file 'path/to/kaganga-sundanese-layout.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
 ```
 
-2. *Font*, so far there's no native font in this packages, so you need to install it manually, i suggest install Kairaga Font or Noto Sans Sundanese for working with this layout.
+2. *Restart or Relog*, there's no change if you haven't restart it dont do
+```
+Alt + F2 -> restart / r (it doesn't work)
+```
+
+4. *Font*, so far there's no native font in this packages, so you need to install it manually, i suggest install Kairaga Font or Noto Sans Sundanese for working with this layout.
   
   [Kairaga](kairaga.com) | [Google Font](font.google.com)
 
