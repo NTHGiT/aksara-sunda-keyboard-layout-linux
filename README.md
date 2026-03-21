@@ -1,4 +1,4 @@
-# Sundanese Script(Kaganga) Layout for Linux
+# Sundanese Script (Aksara Sunda Kaganga) Layout for Linux
 
 ### About
 
