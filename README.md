@@ -2,7 +2,12 @@
 
 ### Preview
 
-|![Screenshot 1](,/prev/1.png)|![Screenshot 2](./prev/2.png)|![Screenshot 3](./prev/3.png)|![Screenshot 4](./prev/4.png)|
+![Screenshot 1](./prev/1.png)
+![Screenshot 2](./prev/2.png)
+![Screenshot 3](./prev/3.png)
+![Screenshot 4](./prev/4.png)
+
+---
 
 ### About
 
