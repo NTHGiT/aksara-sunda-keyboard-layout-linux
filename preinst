@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+# Cukup pastikan dependensi dasar ada jika diperlukan
+exit 0

@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+
+SYMBOL_FILE="/usr/share/X11/xkb/symbols/id"
+EVDEV_XML="/usr/share/X11/xkb/rules/evdev.xml"
+
+sed -i '/\/\/ Layout start/,/\/\/end/d' "$SYMBOL_FILE"
+
+sed -i '\|<variant><configItem><name>kaganga-sundanese</name>|,\|</variant>|d' "$EVDEV_XML"
+
+# 3. Bersihkan gsettings user
+if [ -n "$SUDO_USER" ]; then
+    USER_ID=$(id -u "$SUDO_USER")
+    export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$USER_ID/bus"
+    if [ -S "/run/user/$USER_ID/bus" ]; then
+        CURRENT_SOURCES=$(sudo -u "$SUDO_USER" gsettings get org.gnome.desktop.input-sources sources)
+        NEW_SOURCES=$(echo "$CURRENT_SOURCES" | sed "s|, ('xkb', 'id+kaganga-sundanese')||g; s|('xkb', 'id+kaganga-sundanese'), ||g; s|('xkb', 'id+kaganga-sundanese')||g")
+        sudo -u "$SUDO_USER" gsettings set org.gnome.desktop.input-sources sources "$NEW_SOURCES"
+    fi
+fi
+
+exit 0

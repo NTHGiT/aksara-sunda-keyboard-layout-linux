@@ -1,0 +1,9 @@
+Package: kaganga-sundanese-layout
+Version: 2.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: fontconfig, dbus-x11
+Maintainer: NTHGiT <ilfadhil@protonmail.com>
+Description: Aksara Sunda Unicode Keyboard Layout for XKB
+ Adds Sundanese variant to the Indonesian keyboard layout.
