@@ -124,7 +124,7 @@ Things you need to know after the installation:
   ```
   
 
-2. *Restart or Relog*, there's no change if you haven't restart it dont do
+2. *Restart or Relog*, there's no change if you haven't restart it, dont do
   
   ```
   Alt + F2 -> restart / r (it doesn't work)
