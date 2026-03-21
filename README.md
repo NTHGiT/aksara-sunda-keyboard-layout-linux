@@ -113,6 +113,7 @@ The installation is finely easy just:
 ```
 Download the releases deb packages
 ```
+and... Install
 
 ```shell
 sudo apt install kaganga-sundanese-layout.deb
