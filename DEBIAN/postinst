@@ -31,7 +31,7 @@ xkb_symbols "kaganga-sundanese" {
     key <AD01> { [ U1B8B,          VoidSymbol,  VoidSymbol,  VoidSymbol     ] };
     key <AD02> { [ U1B9D,          U1BAD,       VoidSymbol,  VoidSymbol     ] };
     key <AD03> { [ U1B88,          U1BA8,       U1B86,       U1BA6          ] };
-    key <AD04> { [ U1B9B,          U1BA2,       U1BBB,       VoidSymbol   ] };
+    key <AD04> { [ U1B9B,          U1BA2,       U1BBB,       VoidSymbol     ] };
     key <AD05> { [ U1B92,          VoidSymbol,  VoidSymbol,  VoidSymbol     ] };
     key <AD06> { [ U1B9A,          U1B91,       U1BA1,       VoidSymbol     ] };
     key <AD07> { [ U1B85,          U1BA5,       VoidSymbol,  VoidSymbol     ] };
