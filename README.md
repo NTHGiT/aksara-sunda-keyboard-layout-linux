@@ -86,10 +86,10 @@ _Basic input, Shift input, R-Alt Input, and Shift + R-Alt Input_. Using this way
 
 | From (Keys) | To  | Output |
 | --- | --- | --- |
-| R-Alt + E | E (cureuk) | ᮆ   |
+| R-Alt + E | é | ᮆ   |
 | R-Alt + R | ..r |     |
 | R-Alt + Y | .ya | ᮡ   |
-| R-Alt + I | Eu  | ᮉ   |
+| R-Alt + I | eu  | ᮉ   |
 | R-Alt + H | Kha | ᮮ   |
 | R-Alt + L | Leu | ᮼ   |
 | R-Alt + \ | *virama* | ᮫   |
@@ -99,9 +99,9 @@ _Basic input, Shift input, R-Alt Input, and Shift + R-Alt Input_. Using this way
 
 | From (Keys) | To  | Output |
 | --- | --- | --- |
-| Shift + R-Alt + E | .E (Cureuk) | ᮦ   |
+| Shift + R-Alt + E | .é | ᮦ   |
 | Shift + R-Alt + R | Reu | ᮻ   |
-| Shift + R-Alt + I | .Eu | ᮩ   |
+| Shift + R-Alt + I | .eu | ᮩ   |
 | Shift + R-Alt + \ | Avagraha | ᮺ   |
 
 ---
