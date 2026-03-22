@@ -18,7 +18,7 @@ This project is a personal project i've made because i need **Sundanese Script (
 ### Mapping Layout
 
 This Keyboard Layout has Four Level Input:
-Basic input, Shift input, R-Alt Input, and Shift + R-Alt Input. Using this way you can easily input your keys not in random place like in Windows Inputs
+_Basic input, Shift input, R-Alt Input, and Shift + R-Alt Input_. Using this way you can easily input your keys not in random place like in Windows Inputs
 
 ***Basic Input***:
 
