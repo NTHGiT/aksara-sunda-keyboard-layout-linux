@@ -87,7 +87,7 @@ _Basic input, Shift input, R-Alt Input, and Shift + R-Alt Input_. Using this way
 | From (Keys) | To  | Output |
 | --- | --- | --- |
 | R-Alt + E | é | ᮆ   |
-| R-Alt + R | ..r |     |
+| R-Alt + R | ..r |  ᮁ |
 | R-Alt + Y | .ya | ᮡ   |
 | R-Alt + I | eu  | ᮉ   |
 | R-Alt + H | Kha | ᮮ   |
