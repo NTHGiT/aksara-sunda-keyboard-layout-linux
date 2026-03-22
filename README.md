@@ -111,7 +111,7 @@ Basic input, Shift input, R-Alt Input, and Shift + R-Alt Input. Using this way y
 The installation is finely easy just:
 
 ```
-Download the releases deb packages
+Download the released deb packages
 ```
 and... Install
 
